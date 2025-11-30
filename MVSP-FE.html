@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>融合增强感知的海洋视觉场景解析 - 项目成果展示</title>
+    <link rel="stylesheet" href="MVSP-FE_files/style.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">MVSP-FE</div>
+                <ul class="nav-links">
+                    <li><a href="#problem">问题背景</a></li>
+                    <li><a href="#technology">技术方案</a></li>
+                    <li><a href="#achievement">成果展示</a></li>
+                    <li><a href="#application">应用前景</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <h1>项目成果科普性介绍——</h1>
+            <h1>融合增强感知的海洋视觉场景解析</h1>
+
+            <p>为海洋机器人打造"火眼金睛"，让水下世界清晰可见</p>
+            <a href="#technology" class="btn">了解技术详情</a>
+        </div>
+    </section>
+
+    <!-- 问题背景 -->
+    <section id="problem">
+        <div class="container">
+            <h2 class="section-title">海底世界的"视力障碍"</h2>
+            <div class="problem-intro">
+                <p>水下光线昏暗、颜色失真，传统相机拍出的照片总是模糊不清、一片蓝绿，让水下机器人难以准确识别目标。</p>
+            </div>
+
+            <!-- 轮播图区域 -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <div class="slide-image" style="background-color: #1a5276;"><img src="MVSP-FE_files/img/1.jpg" width="900" height="300" /></div>
+                        <div class="slide-content">
+                            <h3>严重颜色失真</h3>
+                            <p>水对不同波长光线的吸收率不同，导致水下图像普遍偏蓝绿色，失去真实色彩。</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-image" style="background-color: #2874a6;"><img src="MVSP-FE_files/img/2.png" width="900" height="300" /></div>
+                        <div class="slide-content">
+                            <h3>对比度下降</h3>
+                            <p>水中悬浮颗粒散射光线，造成图像模糊、对比度降低，细节难以辨认。</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-image" style="background-color: #3498db;"><img src="MVSP-FE_files/img/3.png" width="900" height="300" /></div>
+                        <div class="slide-content">
+                            <h3>光照不均</h3>
+                            <p>水下光照随深度急剧变化，形成斑驳光影，干扰目标识别与分割。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术方案 -->
+    <section id="technology">
+        <div class="container">
+            <h2 class="section-title">三重技术突破</h2>
+            <div class="tech-container">
+                <div class="tech-card">
+                    <h3>智能修图术</h3>
+                    <p>我们开发了一套智能图像增强系统，通过扩散模型与CLIP分类器，无需依赖大量"标准答案"就能自主掌握图像修复诀窍，处理速度比传统方法快10倍。</p>
+
+                    <!-- 图像对比组件 -->
+                    <div class="image-comparison">
+                        <div class="comparison-container">
+                            <div class="image-before">
+                                <!-- <div class="image-placeholder" style="background-color: #1a5276;"><img src="MVSP-FE_files/img/SQUID-1.png" width="397" height="252" /></div> -->
+                                <img class="image-placeholder" src="MVSP-FE_files/img/SQUID-1.png" width="397" height="252" />
+                                <div class="image-label">增强前</div>
+                            </div>
+                            <div class="image-after">
+                                <!-- <div class="image-placeholder" style="background-color: #85c1e9;"><img src="MVSP-FE_files/img/SQUID-2.png" width="397" height="252" /></div> -->
+                                <img class="image-placeholder" src="MVSP-FE_files/img/SQUID-2.png" width="397" height="252" />
+                                <div class="image-label">增强后</div>
+                            </div>
+                            <div class="comparison-slider">
+                                <div class="slider-button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <img class="tech-img" src="MVSP-FE_files/img/bezier.png" width="300" />
+                    <!-- <div class="tech-img">贝塞尔曲线识别示意图</div> -->
+                    <div class="tech-content">
+                        <h3>精准识别法</h3>
+                        <p>采用贝塞尔曲线建模技术，让机器人能够准确识别海底生物的特殊形态。不仅能找到目标位置，还能精确描绘其弯曲的身体曲线。</p>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <!-- <div class="tech-img">任务感知系统示意图</div> -->
+                    <img class="tech-img" src="MVSP-FE_files/img/e_d.png" width="300" />
+                    <div class="tech-content">
+                        <h3>手眼协调术</h3>
+                        <p>将图像增强和目标识别技术深度融合，开发出任务感知的智能处理系统，在机器人的"视觉皮层"和"运动中枢"之间建立直达通道。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成果展示 -->
+    <section id="achievement">
+        <div class="container">
+            <h2 class="section-title">智能海参采捕机器人</h2>
+            <div class="achievement">
+                <p>我们将这些技术集成创新，研制出了智能海参采捕机器人，在实际应用中展现出卓越性能。</p>
+
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <!-- 此处可替换为实际视频 -->
+                        <img class="video-placeholder" src="MVSP-FE_files/img/cishen.png" /> 项目成果演示视频
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">>96%</div>
+                        <div class="stat-desc">海参识别准确率</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">92%</div>
+                        <div class="stat-desc">尺寸测量准确率</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">>50%</div>
+                        <div class="stat-desc">人力成本降低</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">10倍</div>
+                        <div class="stat-desc">训练速度提升</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 应用前景 -->
+    <section id="application">
+        <div class="container">
+            <h2 class="section-title">广阔的应用前景</h2>
+            <div class="applications">
+                <div class="app-card">
+                    <div class="app-icon">🌊</div>
+                    <h3>海洋生态监测</h3>
+                    <p>自动统计珊瑚礁健康状况、追踪鱼类种群，为海洋保护提供数据支持。</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🔧</div>
+                    <h3>海底设施巡检</h3>
+                    <p>智能检查油气管道、海底电缆的运行状态，降低人工巡检风险。</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">🚨</div>
+                    <h3>水下应急救援</h3>
+                    <p>协助搜寻失事船只、水下救援等任务，提高救援效率与安全性。</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">📊</div>
+                    <h3>海洋资源调查</h3>
+                    <p>高效勘探海底矿产、生物资源，为可持续开发提供科学依据。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>融合增强感知的海洋视觉场景解析 (MVSP-FE)</h3>
+                <ul class="footer-links">
+                    <li><a href="#problem">问题背景</a></li>
+                    <li><a href="#technology">技术方案</a></li>
+                    <li><a href="#achievement">成果展示</a></li>
+                    <li><a href="#application">应用前景</a></li>
+                </ul>
+                <p>&copy; 2025 VisionGroup 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="MVSP-FE_files/script.js"></script>
+</body>
+
+</html>
